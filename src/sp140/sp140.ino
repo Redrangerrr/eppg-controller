@@ -317,7 +317,7 @@ void handleThrottle() {
   // 1000/6/40
     if (deviceData.performance_mode == 0) {  // chill mode
       potLvl = limitedThrottle(potLvl, prevPotLvl, 50);
-      maxPWM = 1850;  // 85% interpolated from 1030 to 1990
+      maxPWM = 1600;  // 60% interpolated from 1030 to 1990
     } else {
       potLvl = limitedThrottle(potLvl, prevPotLvl, 120);
       maxPWM = ESC_MAX_PWM;
